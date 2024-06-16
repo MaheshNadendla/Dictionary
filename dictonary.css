@@ -1,0 +1,200 @@
+body{
+
+    background-color: yellowgreen;
+
+}
+.MainBox{
+    height: 15dvh;
+    width: 80vmin;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 6px 3px 3px black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.MinIncreaseHeight{
+    height: 25dvh;
+    transition: height 1s, background-color 0.5s;
+}
+
+.setCenter{
+    
+    height: 40dvh;
+    width: 60vmin;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    font-size: 19px;
+    opacity: 0.3;
+    transition: height 1s, opacity 1s, background-color 0.5s;
+}
+
+.setStart{
+    height: 40dvh;
+    width: 60vmin;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 19px;
+}
+.Description
+{
+    opacity: 1;
+    transition: opacity 1s, background-color 0.5s;
+}
+
+.IncreaseHeight{
+
+    height: 60dvh;
+    transition: height 1s, background-color 0.5s;
+}
+
+.inputBox{
+
+    margin-top: 60px;
+}
+.TextBox{
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    border-color: blue;
+    background-color: transparent;
+    border-width: 3.5px;
+    width: 45vmin;
+    font-size: x-large;
+    text-align: center;
+    margin-left: 20px;
+}
+.TextBox:focus{
+    outline: none;
+}
+.Submit{
+    background-image: linear-gradient(#42A1EC, #0070C9);
+    width: 100px;
+    height: 35px;
+    border: 1px solid #0077CC;
+    border-radius: 4px;
+    font-size: medium;
+    padding-left: 10px;
+    cursor: pointer;
+    margin-left: 6px;
+    color: #FFFFFF;
+
+
+    
+
+}
+
+.MeaningAudio{
+    width: 60vmin;
+    height: 12vmin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: xxx-large;
+}
+
+.ShotLine{
+    font-size: medium;
+}
+.Sound{
+    height: 65px;
+    width: 65px;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+}
+.Sound:hover{
+    transform: translate(0px,4px);
+}
+
+.Words{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10vmin;
+}
+.Summary{
+    display: flex;
+}
+.RedLine{
+   
+    width: 5px;
+    background-color: red;
+    margin-right: 10px;
+}
+.MicImage{
+    width: 65px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+
+
+.Submit:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.Submit:hover {
+  background-image: linear-gradient(#51A9EE, #147BCD);
+  border-color: #1482D0;
+  text-decoration: none;
+}
+
+.Submit:active {
+  background-image: linear-gradient(#3D94D9, #0067B9);
+  border-color: #006DBC;
+  outline: none;
+}
+
+.Submit:focus {
+  box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 2px;
+  outline: none;
+}
+h2{
+    text-shadow: 4px 2px 6px red;
+    margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width:360px)  {
+
+    .IncreaseHeight{
+
+        height: 80dvh;
+        transition: height 1s, background-color 0.5s;
+    }
+    .TextBox {
+        
+        font-size: small;
+        width: 42vmin;
+    }
+    .Submit {
+        
+        width: 50px;
+        height: 30px;
+        font-size: 10px;
+        padding-left: 10px;
+        cursor: pointer;
+        margin-left: 6px;
+        color: #FFFFFF;
+    }
+    
+    
+}
